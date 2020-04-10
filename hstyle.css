@@ -1,0 +1,105 @@
+*{
+	box-sizing: border-box;
+}
+html, body {
+	padding: 0px;
+	margin: 0px;
+	background: #f6f6f6;
+	font-family: 'lora', serif;
+}
+header{
+	background: transparent;
+	height: 90px;
+}
+header * {
+	color: white;
+}
+header .logo{
+	float: left;
+	height: inherit;
+	margin-left: 2em;
+}
+header .logo-text {
+	margin: 0px;
+	padding: 20px;
+	padding-left: 0px;
+	font-family: 'playball';
+	font-weight: bolder;
+}
+header .logo-text span {
+	color: red;
+	font-family: Monoton;
+	font-size: 45px;
+	font-weight: lighter; 
+}
+header ul{
+	float: right;
+	margin: 0px;
+	padding: 20px;
+	list-style: none;
+	
+}
+header ul li{
+	float: left;
+}
+header ul li a{
+	display: block;
+	padding: 15px;
+	margin-top: -15px;
+	font-size: 1.3em;
+	color: white;
+	text-decoration: none;
+	padding-left: 25px;
+}
+header ul li a .Logout{
+	color: red;
+}
+header ul li a:hover{
+	text-decoration: underline;
+	color: #ff9800;
+	transition: 0.5s;
+}
+
+
+
+
+header .menu-toggle{
+	display: none;
+}
+
+
+
+/*media queries*/
+@media only screen and (max-width: 1050px){
+	header ul{
+		position: relative;
+	}
+	header ul{
+		width: 100%;
+		background: transparent;/*#0E94A0;*/
+
+		max-height: 0px;
+		overflow: hidden;
+		
+		text-align: center;
+
+	}
+	.showing{
+		
+		max-height:25em;
+	}
+	header ul li{
+		width: 100%;
+		
+	}
+	header .logo-text{
+		padding: 30px;
+	}
+	header .menu-toggle{
+		display: block;
+		position: absolute;
+		right: 40px;
+		top: 50px;
+		font-size: 1.9em;
+	}
+}
